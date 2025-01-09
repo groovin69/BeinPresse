@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Beinpresse</title>
+
+    <!-- Relativer Pfad zur CSS-Datei -->
+    <link rel="stylesheet" href="bsheet.css">
+    <script>
+        function handleSearch(event) {
+            event.preventDefault(); // Verhindert das Standardverhalten des Formulars
+            const userInput = document.getElementById("searchInput").value.trim(); // Eingabe ohne Leerzeichen
+            if (userInput === "1") {
+                window.location.href = "B1.html"; // Weiterleitung zur Seite 1
+            } else if (userInput === "2") {
+                window.location.href = "B2.html"; // Weiterleitung zur Seite 2
+            }
+            // Ungültige Eingabe wird ignoriert (keine Aktion)
+        }
+    </script>
+  </head>
+
+  <body class="search">
+    <div class="container">
+      <p style="font-size:20px;">Bitte Mitgliedsnummer eingeben:</p>
+      
+      <!-- Suchformular -->
+      <form onsubmit="handleSearch(event)" class="d-flex" role="search">
+        <input id="searchInput" class="form-control me-2" type="text" placeholder="1 oder 2" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Seite öffnen</button>
+      </form>
+
+      <br><br>
+      
+      <div id="border">
+        <!-- Bild mit relativem Pfad -->
+        <img src="pics/beinpresse.webp" alt="Beinpresse" style="max-width: 100%; height: auto;">
+      </div>
+      <p style="font-size:30px;">Fitnessgerät: Beinpresse</p>
+    </div>
+  </body>
+</html>
