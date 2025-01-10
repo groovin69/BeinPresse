@@ -5,29 +5,69 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Beinpresse</title>
 
-    <!-- Relativer Pfad zur CSS-Datei -->
+    <!-- CSS für Styling -->
     <link rel="stylesheet" href="bsheet.css">
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f9f9f9;
+        color: #333;
+        text-align: center;
+      }
+      .container {
+        padding: 20px;
+      }
+      img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 10px;
+        margin-bottom: 20px;
+      }
+      table {
+        width: 80%;
+        margin: 0 auto 20px;
+        border-collapse: collapse;
+        background-color: white;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+      td {
+        padding: 15px;
+        border: 1px solid #ddd;
+        text-align: center;
+        font-size: 1.2rem;
+      }
+      .btn {
+        display: inline-block;
+        text-decoration: none;
+        padding: 10px 20px;
+        margin: 5px;
+        background-color: #28a745;
+        color: white;
+        border-radius: 5px;
+        font-size: 1rem;
+      }
+      .btn:hover {
+        background-color: #218838;
+      }
+    </style>
   </head>
 
-  <body class="search">
-    <!-- Neue Grafik -->
-    <img src="https://training.fit/wp-content/uploads/2020/03/beinpresse.png" alt="Beinpresse" style="max-width: 100%; height: auto;">
+  <body>
+    <div class="container">
+      <h1>Beinpresse: Einstellungen für Mitglied 1</h1>
 
-    <center>
-      <!-- Tabelle -->
-      <table class="table">
-        <tbody>
-          <tr>
-            <td>Sitzhöhe <br> Raste 2</td>
-            <td>Sitzabstand <br> Raste 4</td>
-          </tr>
-        </tbody>
+      <img src="https://training.fit/wp-content/uploads/2020/03/beinpresse.png" alt="Beinpresse">
+
+      <table>
+        <tr>
+          <td>Sitzhöhe<br>Raste 2</td>
+          <td>Sitzabstand<br>Raste 4</td>
+        </tr>
       </table>
-    </center>
 
-    <!-- Link zurück zur Startseite -->
-    <center>
-      <a href="index.html" class="btn btn-outline-success" style="margin-top: 20px;">Zurück zur Startseite</a>
-    </center>
+      <a href="index.html" class="btn">Zurück zur Startseite</a>
+    </div>
   </body>
 </html>
