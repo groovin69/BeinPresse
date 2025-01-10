@@ -5,27 +5,61 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Beinpresse</title>
 
-    <!-- Relativer Pfad zur CSS-Datei -->
+    <!-- CSS für Styling -->
     <link rel="stylesheet" href="bsheet.css">
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f9f9f9;
+        color: #333;
+        text-align: center;
+      }
+      .container {
+        padding: 20px;
+      }
+      img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 10px;
+        margin-bottom: 20px;
+      }
+      h1 {
+        font-size: 2rem;
+        margin-bottom: 10px;
+      }
+      p {
+        font-size: 1.2rem;
+        margin-bottom: 20px;
+      }
+      .btn {
+        display: inline-block;
+        text-decoration: none;
+        padding: 10px 20px;
+        margin: 5px;
+        background-color: #28a745;
+        color: white;
+        border-radius: 5px;
+        font-size: 1rem;
+      }
+      .btn:hover {
+        background-color: #218838;
+      }
+    </style>
   </head>
 
-  <body class="search">
+  <body>
     <div class="container">
-      <p style="font-size:20px;">Bitte Mitglied auswählen:</p>
-      
-      <!-- Links zu den anderen Seiten -->
+      <h1>Fitnessgerät: Beinpresse</h1>
+      <p>Bitte wähle ein Mitglied aus, um die Einstellungen zu sehen:</p>
+
       <div>
-        <a href="B1.html" class="btn btn-outline-success" style="margin-right: 10px;">Mitglied 1</a>
-        <a href="B2.html" class="btn btn-outline-success">Mitglied 2</a>
+        <a href="B1.html" class="btn">Mitglied 1</a>
+        <a href="B2.html" class="btn">Mitglied 2</a>
       </div>
 
-      <br><br>
-      
-      <div id="border">
-        <!-- Neue Grafik -->
-        <img src="https://www.marbosport.de/data/gfx/pictures/large/7/4/29247_2.jpg" alt="Beinpresse" style="max-width: 100%; height: auto;">
-      </div>
-      <p style="font-size:30px;">Fitnessgerät: Beinpresse</p>
+      <img src="https://training.fit/wp-content/uploads/2020/03/beinpresse.png" alt="Beinpresse">
     </div>
   </body>
 </html>
