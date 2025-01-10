@@ -5,8 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Beinpresse</title>
 
-    <!-- CSS für Styling -->
-    <link rel="stylesheet" href="bsheet.css">
+    <!-- Inline-CSS für verbessertes Design -->
     <style>
       body {
         font-family: Arial, sans-serif;
@@ -25,18 +24,13 @@
         border-radius: 10px;
         margin-bottom: 20px;
       }
-      table {
-        width: 80%;
-        margin: 0 auto 20px;
-        border-collapse: collapse;
-        background-color: white;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      h1 {
+        font-size: 2rem;
+        color: #333;
       }
-      td {
-        padding: 15px;
-        border: 1px solid #ddd;
-        text-align: center;
+      p {
         font-size: 1.2rem;
+        margin-bottom: 20px;
       }
       .btn {
         display: inline-block;
@@ -47,6 +41,7 @@
         color: white;
         border-radius: 5px;
         font-size: 1rem;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
       }
       .btn:hover {
         background-color: #218838;
@@ -56,18 +51,16 @@
 
   <body>
     <div class="container">
-      <h1>Beinpresse: Einstellungen für Mitglied 1</h1>
+      <h1>Fitnessgerät: Beinpresse</h1>
+      <p>Bitte wähle ein Mitglied aus, um die Einstellungen zu sehen:</p>
 
-      <img src="https://training.fit/wp-content/uploads/2020/03/beinpresse.png" alt="Beinpresse">
+      <div>
+        <a href="B1.html" class="btn">Mitglied 1</a>
+        <a href="B2.html" class="btn">Mitglied 2</a>
+      </div>
 
-      <table>
-        <tr>
-          <td>Sitzhöhe<br>Raste 2</td>
-          <td>Sitzabstand<br>Raste 4</td>
-        </tr>
-      </table>
-
-      <a href="index.html" class="btn">Zurück zur Startseite</a>
+      <!-- Neues Bild mit aktualisierter Adresse -->
+      <img src="https://www.marbosport.de/data/gfx/pictures/large/7/4/29247_2.jpg" alt="Beinpresse">
     </div>
   </body>
 </html>
